@@ -24,14 +24,13 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install Dependencies
+      - name: Install Project Dependencies
         run: npm install
 
-      - name: Create Android Folder Structure
-        run: npx cap android add || true
-
-      - name: Sync Capacitor to Native Android
-        run: mkdir -p android && npx cap sync android
+      - name: Create Native Android Project
+        run: |
+          npx cap add android
+          npx cap sync android
 
       - name: Build APK with Gradle
         run: |
