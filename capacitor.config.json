@@ -1,0 +1,6 @@
+{
+  "appId": "com.zonatrialapp.calculadora",
+  "appName": "Calculadora Cientifica",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
