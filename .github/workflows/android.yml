@@ -31,7 +31,7 @@ jobs:
         run: npx cap android add || true
 
       - name: Sync Capacitor to Native Android
-        run: npx cap sync
+        run: mkdir -p android && npx cap sync android
 
       - name: Build APK with Gradle
         run: |
