@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display-container">
+            <div id="history" class="display-history"></div>
+            <div id="result" class="display-main">0</div>
+        </div>
+
+        <div class="buttons-grid">
+            <button class="btn btn-sci" onclick="inputSci('sin')">sin</button>
+            <button class="btn btn-sci" onclick="inputSci('cos')">cos</button>
+            <button class="btn btn-sci" onclick="inputSci('tan')">tan</button>
+            <button class="btn btn-sci" onclick="inputSci('sqrt')">√</button>
+            
+            <button class="btn btn-sci" onclick="inputSci('log')">log</button>
+            <button class="btn btn-sci" onclick="inputSci('ln')">ln</button>
+            <button class="btn btn-sci" onclick="inputSci('pow')">xʸ</button>
+            <button class="btn btn-sci" onclick="inputSci('pi')">π</button>
+
+            <button class="btn btn-clear" onclick="clearDisplay()">C</button>
+            <button class="btn btn-operator" onclick="inputOperator('(')">(</button>
+            <button class="btn btn-operator" onclick="inputOperator(')')">)</button>
+            <button class="btn btn-operator" onclick="inputOperator('/')">÷</button>
+
+            <button class="btn" onclick="inputNumber('7')">7</button>
+            <button class="btn" onclick="inputNumber('8')">8</button>
+            <button class="btn" onclick="inputNumber('9')">9</button>
+            <button class="btn btn-operator" onclick="inputOperator('*')">×</button>
+
+            <button class="btn" onclick="inputNumber('4')">4</button>
+            <button class="btn" onclick="inputNumber('5')">5</button>
+            <button class="btn" onclick="inputNumber('6')">6</button>
+            <button class="btn btn-operator" onclick="inputOperator('-')">−</button>
+
+            <button class="btn" onclick="inputNumber('1')">1</button>
+            <button class="btn" onclick="inputNumber('2')">2</button>
+            <button class="btn" onclick="inputNumber('3')">3</button>
+            <button class="btn btn-operator" onclick="inputOperator('+')">+</button>
+
+            <button class="btn" onclick="inputNumber('0')">0</button>
+            <button class="btn" onclick="inputNumber('.')">.</button>
+            <button class="btn btn-clear" onclick="backspace()">⌫</button>
+            <button class="btn btn-equal" onclick="calculate()">=</button>
+        </div>
+
+        <div class="footer-credits">
+            © 2026 zonatrialapp by DanielReal
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
